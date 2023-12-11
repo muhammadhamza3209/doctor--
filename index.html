@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- 
+    - primary meta tags
+  -->
+        <title>Doctor Appointment</title>
+
+        <!-- 
+    - favicon
+  -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+        <!-- 
+    - google font link
+  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/2a66bc2625.js"
+            crossorigin="anonymous"
+            ;
+        ></script>
+
+        <!-- 
+    - custom css link
+  -->
+        <link rel="stylesheet" href="./styles/index.css" />
+       
+
+        <!-- 
+    - preload images
+  -->
+        <link rel="preload" as="image" href="./images/hero-banner.png" />
+        <link rel="preload" as="image" href="./images/hero-bg.png" />
+    </head>
+
+    <body id="top">
+        <!-- 
+    - #PRELOADER
+  -->
+
+        <div class="preloader" data-preloader>
+            <div class="circle"></div>
+        </div>
+
+        <!-- 
+    - #HEADER
+  -->
+
+        <header class="header" data-header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <h3 class="care_doc">Doctor .Care.</h3>
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="#" class="logo">
+                            <img
+                                src="./images/logo.png"
+                                width="136"
+                                height="46"
+                                alt="Doclab home"
+                            />
+                        </a>
+
+                        <button
+                            class="nav-close-btn"
+                            aria-label="clsoe menu"
+                            data-nav-toggler
+                        >
+                            <ion-icon
+                                name="close-outline"
+                                aria-hidden="true"
+                            ></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="./index.html" class="navbar-link title-md">Home</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a
+                                href="./html/service.html"
+                                class="navbar-link title-md"
+                                >Services</a
+                            >
+                        </li>
+
+                        <li class="navbar-item">
+                            <a
+                                id="user_name"
+                                href="./html/login.html"
+                                class="navbar-link title-md"
+                                >Login</a
+                            >
+                        </li>
+                        <li class="navbar-item">
+                            <a href="./admin/adminLogin.html" class="navbar-link title-md">Admin</a>
+                        </li>
+                        <li
+                            style="display: none"
+                            id="logout_btn"
+                            class="navbar-item"
+                        >
+                            <a href="#" class="navbar-link title-md">
+                                <i class="fa-solid fa-right-from-bracket" style="font-size: 15px;"
+                                    >&nbsp;Logout</i
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button
+                    class="nav-open-btn"
+                    aria-label="open menu"
+                    data-nav-toggler
+                >
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+
+                <div class="overlay" data-nav-toggler data-overlay></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <!-- 
+        - #HERO
+      -->
+
+                <section
+                    class="section hero"
+                    style="background-image: url('./images/hero-bg.png')"
+                    aria-label="home"
+                >
+                    <div class="container">
+                        <div class="hero-content">
+                            <p
+                                class="hero-subtitle has-before"
+                                data-reveal="left"
+                            >
+                                Welcome To DentCare
+                            </p>
+
+                            <h1
+                                class="headline-lg hero-title"
+                                data-reveal="left"
+                            >
+                                Find Best <br />
+                                Doctor.
+                            </h1>
+
+                            <div class="hero-card" data-reveal="left">
+                                <p class="title-lg card-text">
+                                    Find Services and Doctors.
+                                </p>
+
+                                <div class="wrapper">
+                                    <div class="input-wrapper title-lg">
+                                        <input
+                                            type="text"
+                                            name="location"
+                                            placeholder="Search"
+                                            class="input-field"
+                                        />
+
+                                        <ion-icon name="location"></ion-icon>
+                                    </div>
+
+                                    <button class="btn has-before">
+                                        <ion-icon name="search"></ion-icon>
+
+                                        <span class="span title-md"
+                                            >Find Now</span
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <figure class="hero-banner" data-reveal="right">
+                            <img
+                                src="./images/hero-banner.png"
+                                width="590"
+                                height="517"
+                                loading="eager"
+                                alt="hero banner"
+                                class="w-100"
+                            />
+                        </figure>
+                    </div>
+                </section>
+                <!-- 
+        - #SERVICE
+      -->
+                <!-- 
+        - #ABOUT
+      -->
+
+                <section class="section about" aria-labelledby="about-label">
+                    <div class="container">
+                        <div class="about-content">
+                            <p
+                                class="section-subtitle title-lg has-after"
+                                id="about-label"
+                                data-reveal="left"
+                            >
+                                About Us
+                            </p>
+
+                            <h2 class="headline-md" data-reveal="left">
+                                Experienced Workers
+                            </h2>
+
+                            <p class="section-text" data-reveal="left">
+                                Experienced workers in the dental field play a
+                                critical role in providing quality dental care
+                                to patients, with their extensive knowledge and
+                                expertise.
+                            </p>
+
+                            <ul class="tab-list" data-reveal="left">
+                                <li>
+                                    <button class="tab-btn active">
+                                        Vision
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button class="tab-btn">Mission</button>
+                                </li>
+
+                                <li>
+                                    <button class="tab-btn">Strategy</button>
+                                </li>
+                            </ul>
+
+                            <p class="tab-text" data-reveal="left">
+                                There are many benefits to maintaining good
+                                dental care. Here are some of the key benefits
+                                of dental care:
+                            </p>
+
+                            <div class="wrapper">
+                                <ul class="about-list">
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon
+                                            name="checkmark-circle-outline"
+                                        ></ion-icon>
+
+                                        <span class="span"
+                                            >Prevents tooth decay</span
+                                        >
+                                    </li>
+
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon
+                                            name="checkmark-circle-outline"
+                                        ></ion-icon>
+
+                                        <span class="span"
+                                            >Promotes healthy gums</span
+                                        >
+                                    </li>
+
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon
+                                            name="checkmark-circle-outline"
+                                        ></ion-icon>
+
+                                        <span class="span"
+                                            >Freshens breath</span
+                                        >
+                                    </li>
+
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon
+                                            name="checkmark-circle-outline"
+                                        ></ion-icon>
+
+                                        <span class="span"
+                                            >Improves overall health</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <figure class="about-banner" data-reveal="right">
+                            <img
+                                src="./images/about-banner.png"
+                                loading="lazy"
+                                alt="about banner"
+                                class="w-100"
+                            />
+                        </figure>
+                    </div>
+                </section>
+
+                <!--========== SERVICES ==========-->
+                <section class="services section bd-container" id="services">
+                    <h2 class="section-title">Meet Your Doctors</h2>
+
+                    <div class="services_container">
+                        <div class="services_content">
+                            <img
+                                src="https://dentathome.com/wp-content/uploads/2022/01/IMG_5355.jpg"
+                                alt=""
+                            />
+
+                            <h3 class="services_title">Dr. Prachi Deval</h3>
+                            <p class="services_description">
+                                Meet Dr. Prachi Deval, a leading Prosthodontist
+                                and Implantologist from GDC Mumbai. Her
+                                expertise in dentures, Geriatric Dentistry,
+                                cosmetic dentistry, smile designing,
+                                Implants-and Maxillofacial Prosthetics has
+                                helped countless patients regain their beautiful
+                                smiles. Her numerous research articles in
+                                nationally.
+                            </p>
+                        </div>
+
+                        <div class="services_content">
+                            <img src="./images/yogeshGEN.jpg" alt="" />
+
+                            <h3 class="services_title">Dr. Rohan Nashikkar</h3>
+                            <p class="services_description">
+                                Dr Rohan is a 2011 MGV Dental college passout.
+                                His skills and passions in practise are focused
+                                on advanced endodontics and oral surgery.His
+                                goal is of ensuring a painless treatment and
+                                ensuring utmost patient comfort .He also holds a
+                                degree in law and has been involved with
+                                multiple start ups and is a ex-TFI international
+                                fellow.
+                            </p>
+                        </div>
+
+                        <div class="services_content">
+                            <img src="./images/drRupalRana.png" alt="" />
+
+                            <h3 class="services_title">Dr. Pinal Jain</h3>
+                            <p class="services_description">
+                                Dr Pinal Jain is a Periodontist and
+                                Implantologist and has an experience of 7 years
+                                in these fields. She completed her BDS from MGV
+                                dental college , Nashik in 2009 and MDS
+                                Periodontology and Implantology from Sinhgad
+                                dental college , Pune in 2015. She has many
+                                publications in both national and international
+                                journals.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 
+        - #LISTING
+      -->
+                <!-- 
+        - #BLOG
+      -->
+
+                <section class="section blog" aria-labelledby="blog-label">
+                    <div class="container">
+                        <p
+                            class="section-subtitle title-lg text-center"
+                            id="blog-label"
+                            data-reveal="bottom"
+                        >
+                            News & Article
+                        </p>
+
+                        <h2
+                            class="section-title headline-md text-center"
+                            data-reveal="bottom"
+                        >
+                            Latest Articles
+                        </h2>
+
+                        <ul class="grid-list">
+                            <li>
+                                <div
+                                    class="blog-card has-before has-after"
+                                    data-reveal="bottom"
+                                >
+                                    <div class="meta-wrapper">
+                                        <div class="card-meta">
+                                            <ion-icon
+                                                name="person-outline"
+                                            ></ion-icon>
+
+                                            <span class="span">By Dr TINA</span>
+                                        </div>
+
+                                        <div class="card-meta">
+                                            <ion-icon
+                                                name="folder-outline"
+                                            ></ion-icon>
+
+                                            <span class="span">Fortis</span>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="headline-sm card-title">
+                                        Dental myths about dental braces
+                                    </h3>
+
+                                    <time
+                                        class="title-sm date"
+                                        datetime="2022-01-28"
+                                        >14 October, 2022</time
+                                    >
+
+                                    <p class="card-text">
+                                        Braces are only for children. Truth:
+                                        While it's true that most people get
+                                        braces during their teenage years,
+                                        adults can also benefit from braces...
+
+                                        <a href="#" class="btn-text title-lg"
+                                            >Read More</a
+                                        >
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div
+                                    class="blog-card has-before has-after"
+                                    data-reveal="bottom"
+                                >
+                                    <div class="meta-wrapper">
+                                        <div class="card-meta">
+                                            <ion-icon
+                                                name="person-outline"
+                                            ></ion-icon>
+
+                                            <span class="span"
+                                                >By Dr Jayesh</span
+                                            >
+                                        </div>
+
+                                        <div class="card-meta">
+                                            <ion-icon
+                                                name="folder-outline"
+                                            ></ion-icon>
+
+                                            <span class="span">AIIMS</span>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="headline-sm card-title">
+                                        Regular Scaling vs Deep Scaling or Root
+                                        Planing
+                                    </h3>
+
+                                    <time
+                                        class="title-sm date"
+                                        datetime="2022-01-28"
+                                        >03 June, 2023</time
+                                    >
+
+                                    <p class="card-text">
+                                        Regular scaling and deep scaling or root
+                                        planing are two different types of
+                                        dental cleanings that serve different
+                                        purposes. Regular scaling is...
+                                    </p>
+
+                                    <a href="#" class="btn-text title-lg"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </li>
+
+                            <li>
+                                <div
+                                    class="blog-card has-before has-after"
+                                    data-reveal="bottom"
+                                >
+                                    <div class="meta-wrapper">
+                                        <div class="card-meta">
+                                            <ion-icon
+                                                name="person-outline"
+                                            ></ion-icon>
+
+                                            <span class="span"
+                                                >By DR RIHAN</span
+                                            >
+                                        </div>
+
+                                        <div class="card-meta">
+                                            <ion-icon
+                                                name="folder-outline"
+                                            ></ion-icon>
+
+                                            <span class="span">Dentcare</span>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="headline-sm card-title">
+                                        Here’s everything you need to know about
+                                        FMR!
+                                    </h3>
+
+                                    <time
+                                        class="title-sm date"
+                                        datetime="2022-01-28"
+                                        >28 January, 2022</time
+                                    >
+
+                                    <p class="card-text">
+                                        FMR is caused by a mutation in the FMR1
+                                        gene, which is responsible for producing
+                                        a protein that is important for normal
+                                        brain development...
+                                    </p>
+
+                                    <a href="#" class="btn-text title-lg"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </main>
+        <!-- 
+    - #FOOTER
+  -->
+
+        <footer
+            class="footer"
+        >
+            <div class="container">
+                <div class="section footer-top">
+                    <div class="footer-list" data-reveal="bottom">
+                        <p class="headline-sm footer-list-title">About Us</p>
+
+                        <p class="text">
+                            Dentcare is on a mission to make quality healthcare
+                            affordable and accessible for over a billion+
+                            Indians. We believe in empowering our users with the
+                            most accurate, comprehensive, and curated
+                            information and care.
+                        </p>
+
+                        <address class="address">
+                            <ion-icon name="map-outline"></ion-icon>
+
+                            <span class="text">
+                                INA <br />
+                                New Delhi,110023
+                            </span>
+                        </address>
+                    </div>
+
+                    <ul class="footer-list" data-reveal="bottom">
+                        <li>
+                            <p class="headline-sm footer-list-title">
+                                Services
+                            </p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link">Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link">Listing</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >How It Works</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >What We Offer</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link">Latest News</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list" data-reveal="bottom">
+                        <li>
+                            <p class="headline-sm footer-list-title">
+                                Useful Links
+                            </p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link">Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >Terms of Use</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >Our Services</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >Join as a Doctor</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >New Guests List</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="text footer-link"
+                                >The Team List</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="footer-list" data-reveal="bottom">
+                        <p class="headline-sm footer-list-title">Subscribe</p>
+
+                        <form action="./html/feedbackForm.html" class="footer-form">
+                            <input
+                                id="inputEmail"
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                class="input-field title-lg"
+                                required
+                            />
+
+                            <button
+                            id="feedbackButton"
+                                class="btn has-before title-md"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+
+                        <p class="text">
+                            Get the latest updates via email. Any time you may
+                            unsubscribe
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="text copyright">
+                        &copy; Dentcare 2023 | All Rights Reserved
+                    </p>
+
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-google"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+    href="#top"
+    class="back-top-btn"
+    aria-label="back to top"
+    data-back-top-btn
+    >
+    <ion-icon name="chevron-up"></ion-icon>
+    </a>
+        <!-- 
+    - custom js link
+  -->
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./scripts/index.js"></script>
+
+        <!-- 
+    - ionicon link
+  -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
